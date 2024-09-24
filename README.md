@@ -9,5 +9,5 @@ I come from a background in the hospitality field and have always had more of an
   * 📝📝 Platform to record my Resume 📝📝
   * ⚙️👨‍💻 Share in Projects i have been a part of or am currently participating 👨‍💻⚙️
   * 🏫🏆 Archive of my Education and achievements 🏆🏫
-  * 💻🧠 Develop mmy skills and understanding of technologies such as Python, HTML, CSS, JS, Git, Source Control etc 🧠💻
+  * 💻🧠 Develop my skills and understanding of technologies such as Python, HTML, CSS, JS, Git, Source Control etc 🧠💻
 
