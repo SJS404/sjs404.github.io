@@ -1323,7 +1323,7 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     border: 1px var(--slate) solid;
-    margin-inline: 2rem;
+    margin-inline: 10%;
     padding: 2rem;
     border-radius: 25px;
     background-color: var(--white);
@@ -1360,7 +1360,7 @@ body.modal-open {
     padding: 0.5rem;
     border-radius: 25px;
     justify-items: center;
-    background: var(--foreground);
+    background: var(--blue-bg);
     box-shadow: var(--box-shadow);
 
 }
@@ -1373,11 +1373,11 @@ body.modal-open {
 }
 
 .carosel-card > h6 {
-    color: var(--yellow-accent);
+    color: var(--medium-blue);
     font-family: Ubuntu;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 
@@ -1531,6 +1531,7 @@ td:nth-child(3) {
     border-radius: 25px;
     background-color: var(--foreground);
     color: var(--white);
+    margin: inherit;
 }
 
 .privacy-content a, 
@@ -1659,6 +1660,10 @@ footer {
     .course-summary {
         justify-content: center;
         padding-top: 0;
+    }
+
+    .course-card {
+        padding: 0rem;
     }
 
     .courses {
