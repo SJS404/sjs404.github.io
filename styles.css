@@ -1299,6 +1299,9 @@ body.modal-open {
     border-top: 2px var(--medium-blue) solid;
 }
 
+.workstation-wrapper {
+    display: flex;
+}
 #project-hero {
     display: flex;
     align-items: center;
