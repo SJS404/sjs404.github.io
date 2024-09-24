@@ -77,8 +77,7 @@ nav {
     list-style: none;
     font-size: 1.5rem;
     font-weight: 800;
-    /* gap: 4rem; */
-    gap: clamp(1rem, 4rem, 6rem);
+    gap: 4rem;
     align-items: center;
     justify-content: flex-end;
 }
@@ -349,6 +348,7 @@ nav {
     gap: 2rem;
     padding: 10%;
     min-height: 70svh;
+    border-bottom: 2px var(--medium-blue) solid;
     
 }
 
@@ -790,7 +790,6 @@ nav {
     color: var(--white);
     font-family: Orbitron;
     position: relative;
-    border-radius: 25px;
 }
 
 .section h2:before,
@@ -1291,18 +1290,19 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 2rem;
     justify-content: center;
     justify-self: center;
     align-items: center;
     background-color: var(--white);
     width: 100%;
     padding: 2rem;
+    border-top: 2px var(--medium-blue) solid;
 }
 
 #project-hero {
     display: flex;
     align-items: center;
+    border-bottom: 2px var(--medium-blue) solid;
 }
 
 .project-writeup {
@@ -1513,6 +1513,7 @@ td:nth-child(3) {
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
+    margin-inline: 10%;
     border: 1px var(--slate) solid;
     border-radius: 25px;
     color: var(--blue-accent);
@@ -1571,7 +1572,7 @@ footer {
     background-color: var(--blue-accent);
     justify-content: space-between;
     padding: 2rem;
-    border-top: 2px solid var(--slate);
+    border-top: 2px solid var(--risd-blue);
     align-items: center;
 }
 
@@ -1726,6 +1727,10 @@ footer {
 
     .hamburger-menu {
         display: flex;
+    }
+
+    .privacy-content, .cookie-content {
+        margin-inline: 0;
     }
 
     footer {
