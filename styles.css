@@ -1301,6 +1301,46 @@ body.modal-open {
 
 .workstation-wrapper {
     display: flex;
+    gap: 1rem;
+}
+
+#PCImg {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px var(--medium-blue) solid;
+    box-shadow: var(--box-shadow);
+}
+
+.network-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-bg);
+    border-top: 2px var(--medium-blue) solid;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.network-map > h2 {
+    font-family: Orbitron;
+    color: var(--blue-accent);
+    text-decoration: underline;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 2px var(--blue-accent) solid;
+}
+
+#NetMapImg {
+    width: 915px;
+    /* border: 1px pink solid; */
+    padding: 1rem;
+    background-color: var(--blue-accent);
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
 }
 #project-hero {
     display: flex;
