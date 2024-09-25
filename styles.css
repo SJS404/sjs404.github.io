@@ -1452,7 +1452,7 @@ body.modal-open {
 }
 
 #NetMapImg {
-    width: 50%;
+    max-width: 100%;
     /* border: 1px pink solid; */
     padding: 1rem;
     background-color: var(--blue-accent);
@@ -1468,6 +1468,13 @@ body.modal-open {
     padding: 2rem;
     gap: 1rem;
     align-items: center;
+}
+
+.current-rig {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    justify-content: space-around;
 }
 
 
@@ -1643,6 +1650,10 @@ footer {
 /* Tabelt & Mobile media queries */
 
 @media screen and (max-width:877px) {
+
+    .hero {
+        align-items: center;
+    }
 
     .summary {
         max-width:100%;
