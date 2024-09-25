@@ -1299,49 +1299,7 @@ body.modal-open {
     border-top: 2px var(--medium-blue) solid;
 }
 
-.workstation-wrapper {
-    display: flex;
-    gap: 1rem;
-}
 
-#PCImg {
-    width: 50%;
-    height: auto;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 25px;
-    border: 2px var(--medium-blue) solid;
-    box-shadow: var(--box-shadow);
-}
-
-.network-map {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--blue-bg);
-    border-top: 2px var(--medium-blue) solid;
-    padding: 2rem;
-    gap: 1rem;
-}
-
-.network-map > h2 {
-    font-family: Orbitron;
-    color: var(--blue-accent);
-    text-decoration: underline;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 25px;
-    border: 2px var(--blue-accent) solid;
-}
-
-#NetMapImg {
-    width: 915px;
-    /* border: 1px pink solid; */
-    padding: 1rem;
-    background-color: var(--blue-accent);
-    border-radius: 25px;
-    box-shadow: var(--box-shadow);
-}
 #project-hero {
     display: flex;
     align-items: center;
@@ -1478,9 +1436,61 @@ body.modal-open {
 .current-homelab {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     align-items: center;
 }
+
+
+#PCImg {
+    width: 250px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px var(--medium-blue) solid;
+    box-shadow: var(--box-shadow);
+}
+
+.network-map {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-bg);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.current-homelab h2 {
+    font-family: Orbitron;
+    color: var(--blue-accent);
+    text-decoration: underline;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 2px var(--blue-accent) solid;
+    width: max-content;
+}
+
+#NetMapImg {
+    width: 50%;
+    /* border: 1px pink solid; */
+    padding: 1rem;
+    background-color: var(--blue-accent);
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+}
+
+.workstation-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+
 
 .current-homelab .workstation {
     width: 75%;
@@ -1488,9 +1498,6 @@ body.modal-open {
     color: var(--blue-accent);
 }
 
-/* .workstation, th, td{
-    border: 1px red solid;
-} */
 
 th {
     background-color: var(--blue-accent);
@@ -1770,6 +1777,15 @@ footer {
 
     .hamburger-menu {
         display: flex;
+    }
+
+    .workstation-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workstation table.workstation {
+        width: 100%;
     }
 
     .privacy-content, .cookie-content {
