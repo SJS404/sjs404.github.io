@@ -385,14 +385,6 @@ nav {
     text-transform: capitalize;
 }
 
-@media screen and (max-width: 1000px){
-    .summary {
-        max-width:100%;
-        text-align: center;
-    }
-}
-
-
 .summary h1 {
     text-decoration: underline var(--medium-blue);
     font-size: 3rem;
@@ -543,12 +535,6 @@ nav {
     padding: 2rem;
     gap: 2rem;
     background-color: var(--blue-bg);
-}
-
-@media screen and (max-width: 600px) {
-    .key-skills{
-        flex-wrap: wrap;
-    }
 }
 
 .skill-card {
@@ -994,12 +980,6 @@ nav {
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
     gap: 2rem;
-
-    @media screen and (max-width: 800px)  {
-
-        grid-template-columns: auto;
-    
-    }
 
 }
 
@@ -1660,8 +1640,16 @@ footer {
     color: var(--risd-blue);
 }
 
+/* Tabelt & Mobile media queries */
+
 @media screen and (max-width:877px) {
-    
+
+    .summary {
+        max-width:100%;
+        text-align: center;
+        padding-inline: inherit;
+    }
+
     .nav-links {
         display: none;
     }
@@ -1687,6 +1675,7 @@ footer {
 
     .key-skills {
         grid-template-columns: 1fr;
+        flex-wrap: wrap;
     }
     .skill-card {
         justify-content: space-evenly;
@@ -1720,6 +1709,7 @@ footer {
     .courses {
         grid-template-columns: auto;
     }
+
     .pro-filter ul{
         flex-wrap: wrap;
         justify-content: center;
