@@ -352,7 +352,10 @@ nav {
     
 }
 
-.hero button {
+.hero-btn {
+    display: flex;
+    text-decoration: none;
+    gap: 5px;
     padding: 20px;
     border-radius: 45px;
     border: none;
@@ -360,13 +363,13 @@ nav {
     background-color: var(--white);
     color: var(--medium-blue);
 }
-.hero button img {
+.hero-btn img {
     height:1.5rem;
     width:auto;
 }
 
-.hero button:focus-within,
-.hero button:hover {
+.hero-btn:focus-within,
+.hero-btn:hover {
     background-color: var(--medium-blue);
     color: var(--white);
     box-shadow: 0 0 5px 5px var(--white);
@@ -715,6 +718,7 @@ nav {
 .job-previous .job-logo {
     height: 6rem;
     width: auto;
+    padding-inline: 0.5rem;
 }
 
 .job-previous .job-skills {
@@ -1474,7 +1478,8 @@ body.modal-open {
     display: flex;
     width: 100%;
     padding: 2rem;
-    justify-content: space-around;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 
 
@@ -1560,7 +1565,8 @@ td:nth-child(3) {
 
 .privacy-content > h2,
 .cookie-content > h2,
-.pro-writeup-contents >h2 {
+.pro-writeup-contents > h2 {
+    align-self: center;
     text-align: center;
     text-decoration: underline;
     padding: 0.75rem;
@@ -1743,6 +1749,7 @@ footer {
 
     .pro-writeup-contents {
         font-size: 1rem;
+        margin-inline: 5%;
     }
     .project-carosel {
         grid-auto-columns: 102%;
@@ -1785,8 +1792,30 @@ footer {
         align-items: center;
     }
 
-    .workstation table.workstation {
-        width: 100%;
+
+    .current-rig {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .current-homelab .workstation {
+        width: 95vw;
+    }
+
+    tr td {
+        text-wrap: balance;
+        text-align: center;
+    }
+
+    td:nth-child(1) {
+        display: none;
+    }
+    th:nth-child(1) {
+        display: none;
+    }
+
+    .amazon-link {
+        text-wrap: nowrap;
     }
 
     .privacy-content, .cookie-content {
