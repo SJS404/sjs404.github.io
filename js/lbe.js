@@ -11,7 +11,7 @@ function decodeAndInsert(linkString, className) {
 window.onload = function() {
     const links = {
         eLink: 'aHR0cHM6Ly90aW55dXJsLmNvbS81Y3M4cmF3Yw==',
-        tLink: 'aHR0cHM6Ly90aW55dXJsLmNvbS84OTR1eHhieg=='
+        tLink: 'aHR0cHM6Ly90aW55dXJsLmNvbS80ajVmYjk5Mgo='
     };
 
     decodeAndInsert(links.eLink, 'eLink');
