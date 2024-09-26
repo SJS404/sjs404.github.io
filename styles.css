@@ -1271,6 +1271,10 @@ body.modal-open {
     border-bottom: 2px var(--medium-blue) solid;
 }
 
+.project-title {
+    text-align: center;
+}
+
 .project-writeup {
     display: grid;
     gap: 1.5rem;
