@@ -26,7 +26,6 @@
 
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -52,7 +51,7 @@ nav {
     align-items: center;
     padding: 1rem 2rem;
     position: relative;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .navbar .logo img{
@@ -118,7 +117,7 @@ nav {
 
 .modal-content {
     position: relative;
-    background-color: #fff;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +137,6 @@ nav {
 }
 
 .modal-content p {
-
     margin-inline: 4rem;
     text-align: center;
     font-weight: 400;
@@ -151,6 +149,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .contact-social a img {
     height: 50px;
     width: auto;
@@ -217,21 +216,24 @@ nav {
     list-style: none;
     gap: 1rem;
     background: none;
+}
 
-    img {
-        width: 35px;
-        height: auto;
-        filter: grayscale();
-    }
-    img:hover{
-        scale: 1.2;
-        transition: var(--animation-timing);
-        filter: drop-shadow(2px 2px 6px rgb(245, 242, 242) ) ;
-    }
+.nav-social img {
+    width: 35px;
+    height: auto;
+    filter: grayscale();
+}
+
+.nav-social img:hover,
+.nav-social img:focus-within {
+    scale: 1.2;
+    transition: var(--animation-timing);
+    filter: drop-shadow(2px 2px 6px rgb(245, 242, 242) ) ;
 }
 
 .hamburger-menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
     display: none;
     flex-direction: column;
     gap: var(--hamburger-gap);
@@ -349,7 +351,6 @@ nav {
     padding: 10%;
     min-height: 70svh;
     border-bottom: 2px var(--medium-blue) solid;
-    
 }
 
 .hero-btn {
@@ -465,7 +466,7 @@ nav {
 }
 
 .about-content p strong {
-    color: #121274;
+    color: var(--blue-accent);
 }
 
 .tech {
@@ -490,21 +491,18 @@ nav {
 }
 
 .tech-reel {
-    
     display: flex;
     justify-content: space-evenly;
     gap: 4rem;
     animation: 120s slide infinite linear;
-
-    img {
-        filter: grayscale();
-        height: 50px;
-        width: auto;
-        
-    }
- 
 }
 
+.tech-reel img {
+    filter: grayscale();
+    height: 50px;
+    width: auto;
+        
+}
 .tech-reel  img:hover {
     filter: none;  
 }
@@ -552,18 +550,20 @@ nav {
     min-height: 300px;
     max-width: 350px;
     background-color: var(--white);
-    
-    img {
-        height: 50px;
-        width: auto;
-    }
-    h3 {
-        color: var(--blue-accent);
-        text-transform: capitalize;
-    }
-    p {
-        width: 90%;
-    }
+}
+
+.skill-card > img {
+    height: 50px;
+    width: auto;
+}
+
+.skill-card > h3 {
+    color: var(--blue-accent);
+    text-transform: capitalize;
+}
+
+.skill-card > p {
+    width: 90%;
 }
 
 .current-wrapper {
@@ -610,7 +610,6 @@ nav {
 }
 
 .job-current .job-logo {
-    
     margin: 1rem;
     width: auto;
     height: 5rem;
@@ -653,10 +652,9 @@ nav {
     border-radius: 25px;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--white);
     background-color: var(--blue-accent);
     box-shadow: var(--box-shadow);
-
 }
 
 .job-previous .company-logo {
@@ -665,7 +663,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 200px;
-    background-color: white;
+    background-color: var(--white);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: 2px solid var(--slate);
@@ -685,7 +683,7 @@ nav {
 
 .job-previous .workplace .company {
     padding: 2rem;
-    color: white;
+    color: var(--white);
 }
 
 .job-previous .workplace .company:hover,
@@ -741,7 +739,6 @@ nav {
     font-weight: 700;
     text-align: center;
     color: var(--yellow-accent);
-    
 }
 
 .job-previous .job-skills img {
@@ -807,7 +804,6 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    
 }
 
 .edu-wrapper {
@@ -852,12 +848,14 @@ nav {
     border: 1px solid var(--blue-accent);
     box-shadow: var(--box-shadow);
 }
+
 .tech-used {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .tech-used li {
     list-style: none;
 }
@@ -874,7 +872,7 @@ nav {
 }
 
 .edu-content h3 {
-    color: #121274;
+    color: var(--blue-accent);
 }
 
 .seperator {
@@ -984,7 +982,6 @@ nav {
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
     gap: 2rem;
-
 }
 
 .course-card2 {
@@ -1064,7 +1061,6 @@ nav {
 }
 
 .course-summary2 p {
-
     text-align: center;
 }
 
@@ -1096,10 +1092,10 @@ nav {
 .cert-modal-content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     max-width: 85%;
     background-color: var(--blue-bg);
-    padding: 2rem;
+    border: 1px solid var(--medium-blue);
+    padding: 2px;
     border-radius: 25px;
     position: relative;
     text-align: center;
@@ -1118,7 +1114,7 @@ nav {
 .close-btn > img {
     height: 100%;
     width: auto;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 50%;
 }
 
@@ -1132,13 +1128,14 @@ nav {
     border-radius: 25px;
     max-height: 80svh;
     max-width: 80vw;
-    margin-bottom: 15px;
 }
 
 .cert-modal-description {
     font-family: Ubuntu;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 1rem;
     color: var(--medium-blue);
+    font-weight: bold;
 }
 
 body.modal-open {
@@ -1163,7 +1160,6 @@ body.modal-open {
     outline: none;
     border: none;
     padding: 1rem; 
-    
 }
 
 .filter-item.selected,
@@ -1215,16 +1211,6 @@ body.modal-open {
     color: var(--white);
     background-color: var(--blue-accent);
     box-shadow: var(--box-shadow);
-    
-}
-
-.pro-card img {
-    width: 100%;
-    max-height: 50%;
-    object-fit: cover;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    
 }
 
 .pro-card img {
@@ -1243,15 +1229,12 @@ body.modal-open {
     align-items: center;
     width: 100%;
     padding: 1rem;
-
 }
 
 .pro-card ul img {
-    
     height: 1.5rem;
     width: auto;
     filter: brightness(0) invert(1);
-    
 }
  
 .pro-logo {
@@ -1269,7 +1252,6 @@ body.modal-open {
     color: var(--vivid-sky-blue);
 }
 
-
 .project-tech-wrapper {
     display: flex;
     flex-direction: column;
@@ -1282,7 +1264,6 @@ body.modal-open {
     padding: 2rem;
     border-top: 2px var(--medium-blue) solid;
 }
-
 
 #project-hero {
     display: flex;
@@ -1316,6 +1297,7 @@ body.modal-open {
     color: var(--blue-accent);
     font-size: 1.1rem;
 }
+
 .project-carosel{
     display: grid;
     gap: 1rem;
@@ -1326,7 +1308,6 @@ body.modal-open {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     border-radius: 25px;
-
 }
 
 .snaps-inline {
@@ -1347,7 +1328,6 @@ body.modal-open {
     justify-items: center;
     background: var(--blue-bg);
     box-shadow: var(--box-shadow);
-
 }
 
 .carosel-card > img {
@@ -1360,14 +1340,11 @@ body.modal-open {
 .carosel-card > h6 {
     color: var(--medium-blue);
     font-family: Ubuntu;
-    /* font-style: italic; */
     font-weight: 700;
     font-size: 0.9rem;
 }
 
-
 .project-carosel::-webkit-scrollbar {
-    
     width: 1rem;
     margin-inline: 1rem;
     border-radius: 100vw;
@@ -1423,7 +1400,6 @@ body.modal-open {
     align-items: center;
 }
 
-
 #PCImg {
     width: 250px;
     height: auto;
@@ -1457,7 +1433,6 @@ body.modal-open {
 
 #NetMapImg {
     max-width: 100%;
-    /* border: 1px pink solid; */
     padding: 1rem;
     background-color: var(--blue-accent);
     border-radius: 25px;
@@ -1482,14 +1457,11 @@ body.modal-open {
     justify-content: space-evenly;
 }
 
-
-
 .current-homelab .workstation {
     width: 75%;
     border: 1px black solid;
     color: var(--blue-accent);
 }
-
 
 th {
     background-color: var(--blue-accent);
@@ -1509,8 +1481,6 @@ tr:nth-child(even) {
     background-color: var(--blue-bg);
 }
 
-
-
 td:nth-child(1) {
     font-weight: bold;
 }
@@ -1518,7 +1488,6 @@ td:nth-child(1) {
 td:nth-child(3) {
     text-align: center;
 }
-
 
 .workstation .amazon-declaration {
     font-style: italic;
@@ -1629,8 +1598,6 @@ footer {
     list-style: none;
 }
 
-
-
 .footer-social-nav img {
     width: 50px;
     height: auto;
@@ -1651,13 +1618,17 @@ footer {
 .footer-legal a:hover,
 .footer-legal a:focus {
     color: var(--risd-blue);
+    transition: var(--animation-timing);
 }
 
 /* Tabelt & Mobile media queries */
 
 @media screen and (max-width:877px) {
 
-    .hero {
+    .hero,
+    .workstation-wrapper,
+    .current-rig,
+    .pro-filter ul {
         align-items: center;
     }
 
@@ -1665,10 +1636,6 @@ footer {
         max-width:100%;
         text-align: center;
         padding-inline: inherit;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .navbar {
@@ -1701,12 +1668,20 @@ footer {
     }
 
     .edu-wrapper .course-card {
-        flex-direction: column;
         padding-bottom: 0;
     }
 
-    .about-card {
+    .edu-wrapper .course-card,
+    .project-tech-card,
+    .about-card,
+    .workstation-wrapper,
+    .current-rig,
+    footer {
         flex-direction: column;
+    }
+
+
+    .about-card {
         max-width: 90%;
     }
 
@@ -1730,7 +1705,6 @@ footer {
     .pro-filter ul{
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         gap: .5rem;
     }
 
@@ -1739,12 +1713,11 @@ footer {
     }
 
     .project-tech-card {
-        flex-direction: column;
         width: 85%;
+    }
 
-        h4 {
-            text-align: center;
-        }
+    .project-tech-card > h4 {
+        text-align: center;
     }
 
     .pro-writeup-contents {
@@ -1754,23 +1727,18 @@ footer {
     .project-carosel {
         grid-auto-columns: 102%;
         gap: 0;
-        margin-block: 0;
-        margin-inline: .5rem;
+        margin: 0 0.5rem;
         padding-top: 0;
         border-radius: 0;
     }
     .carosel-card {
         padding: 0;
-        border-radius: 0;
-        
+        border-radius: 0; 
     }
 
     .carosel-card >img {
         border-radius: 0;
         border: 0;
-    }
-    .carosel-card > h6 {
-        display: none;
     }
 
     .project-carosel::-webkit-scrollbar-track {
@@ -1787,17 +1755,6 @@ footer {
         display: flex;
     }
 
-    .workstation-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .current-rig {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .current-homelab .workstation {
         width: 95vw;
     }
@@ -1807,9 +1764,9 @@ footer {
         text-align: center;
     }
 
-    td:nth-child(1) {
-        display: none;
-    }
+    .carosel-card > h6,
+    .nav-links,
+    td:nth-child(1),
     th:nth-child(1) {
         display: none;
     }
@@ -1820,10 +1777,6 @@ footer {
 
     .privacy-content, .cookie-content {
         margin-inline: 0;
-    }
-
-    footer {
-        flex-direction: column;
     }
 
     .footer-legal {
