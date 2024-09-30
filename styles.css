@@ -1319,7 +1319,7 @@ body.modal-open {
     transform: translateY(-50%);
     width: 1rem;
     height: 1rem;
-    background-image: url('assets/Favicon.png');
+    background-image: url('assets/site/Favicon.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
