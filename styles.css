@@ -840,7 +840,14 @@ nav {
     gap: 2rem;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem
+    padding: 1rem
+}
+
+.course-summary2 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-inline: 2rem;
 }
 
 .course-card a img {
@@ -1057,7 +1064,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+}
+
+.course-summary2:has(ul) {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 .course-summary2 p {
@@ -1473,6 +1484,7 @@ body.modal-open {
     padding: 1rem;
     font-size: 1.2rem;
 }
+
 #PCImg {
     width: 250px;
     height: auto;
@@ -1806,9 +1818,10 @@ footer {
         border-radius: 0; 
     }
 
-    .carosel-card >img {
+    .carosel-card > img {
         border-radius: 0;
         border: 0;
+        border-inline: 1px var(--slate) solid;
     }
 
     .project-carosel::-webkit-scrollbar-track {
