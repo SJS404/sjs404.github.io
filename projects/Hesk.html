@@ -164,25 +164,28 @@
                 <div class="pro-writeup-contents">
                     
                     <h2>Identifying the Problem</h2>
-                        <p>Recognizing the importance of experience with helpdesk and ticketing systems for job applications, I saw this as a significant obstacle for my fellow students and myself. With the software still not approved and weekly remote sessions, I decided to find a solution. After consulting with my tutor and receiving his approval, I took on the task of implementing a ticketing system.</p>
+                        <p>Recognizing the importance of experience with helpdesk and ticketing systems for job applications, I saw this as a significant obstacle for my fellow students and myself. With the software still not approved and weekly remote sessions, I decided to find a solution. After consulting with my tutor and receiving his approval, I took on the task of implementing a ticketing system that, we as students could use, that would not contradict or contravene the colleges IT policies, but still provide the necessary learning outcomes.</p>
+
+                    <h2>Security Considerations</h2>
+                        <p>I needed to ensure the platform was secured with it being public facing and having sensitive user data contained. To do this, I enabled MFA (<b><i>Multi-Factor Authenication</i></b>) where possible. For my AWS account i always use an authenticator app for one time passcodes on any of my projects. In addition to this i ensured that SSH into the AWS Instance was only permitted with a key pair for added security. On the Hesk Platform, the admin account also contains seperate MFA to be able to enter into any sensitive areas such as settings and accounts.</p>
 
                     <h2>Solution Research and Selection</h2>
-                        <p>I needed to find a free ticketing software due to the lack of financial support for the project. Through my research, I chose Hesk because it is free, fully customizable, user-friendly, and web-based. This made it accessible for students and compatible with various devices.</p>
+                        <p>I needed to find a free ticketing software due to the lack of financial support for the project. Some ticketing software requires licensing and can get quite expensive for beginners or small businesses. Through my research, I chose Hesk because it is free, open sourced, fully customizable, user-friendly, and web-based. This made it accessible for students and compatible with various devices.</p>
 
                     <h2>Deployment and Hosting</h2>
-                        <p>To ensure constant accessibility, I decided to host the service on AWS, utilizing their free tier plans for EC2 instances. This provided a reliable virtual machine with excellent uptime. Concurrently, I delved into Linux and learned about spinning up web servers using Apache. I deployed an Ubuntu virtual machine and installed the necessary software for Hesk.</p>
+                        <p>To ensure constant accessibility, I decided to host the service on AWS (<b><i>Amazon Web Services</i></b>), utilizing their free tier plans for EC2 instances. This provided a reliable virtual machine with excellent uptime at no cost during the project timescale. Concurrently, I delved into Linux and learned about spinning up web servers using Apache. I deployed an Ubuntu 22.04 Server virtual machine and installed the necessary software for Hesk. With Ubuntu 22.04 Server having the default of a command line interface, i needed to utilise FTP Protocols, more specifically SFTP (<b><i>SSH File Transfer Protocol</i></b>) to add the software to the server in order to run the installation and setup process. I could have installed a GUI (<b><i>Graphical User Interface</i></b>) such as GNOME or XFCE, however they can be quite heavy resource wise and wasnt necessary for the project.</p>
 
                     <h2>Configuration and User Setup</h2>
-                        <p>After configuring the software, I created user accounts for all students and set admin accounts for myself and my tutor. I also added fictional user accounts to create test scenarios. Additionally, I configured category groups for tickets, such as hardware issues, software issues, and password resets.</p>
+                        <p>After configuring the Hesk software, I created multiple user accounts for all students and set admin accounts for myself and my tutor. I then added MFA to my account and advised my tutor to do the same as this would add an extra layer of security. I also added fictional user accounts to create test scenarios for the tickets. Additionally, I configured category groups for tickets, such as hardware issues, software issues, security incidents and password resets. This provided an interface for users to click on when creating a ticket that would ensure they would be categorised efficiently. In addition, each IT Technician can be assigned automatically to a specific category if required through the admin console.</p>
                     
                     <h2>Ticket Configuration</h2>
-                        <p>I customized the default tickets to ensure IT Technicians received relevant information to resolve issues effectively. Once the configurations were complete, I consulted Darren, and we decided to proceed with the implementation.</p>
+                        <p>I customized the default tickets to ensure IT Technicians received relevant information to resolve issues effectively. Each ticket would initially be unassigned on creation for the purposes of this project. My turor could then determine who he thought best to handle each ticket and target peoples strengths and weaknesses. Once the configurations were complete, I consulted Darren and we decided to proceed with the implementation.</p>
 
                     <h2>Practical Application</h2>
-                        <p>During the following remote sessions, we used the deployed ticketing system for role-playing scenarios. Tickets ranged from simple resets to complex issues, simulating real-world usage. Tickets were prioritized and documented, and once approved by the tutor, they were closed and added to the knowledge bank.</p>
+                        <p>During the remote sessions that followed, we used the deployed ticketing system for role-playing scenarios and learning. Tickets ranged from simple resets to complex issues, simulating real-world use cases. Tickets were prioritized and documented, and once approved by the tutor, they were closed and added to the knowledge bank as would be the case in real world situations.</p>
 
                     <h2>Outcome</h2>
-                        <p>This project provided the class with a fundamental understanding and practical experience of using ticketing software, significantly enhancing our skills and readiness for the industry.</p>
+                        <p>This project provided the class with a fundamental understanding and practical experience of using ticketing software, significantly enhancing our skills and readiness for the industry. I personally used the opportunity to increase my understanding of setting up a system that uses multiple processes, protocols and technologies to achieve a required outcome and goal. It was very reqarding and i am happy that i was able to help out fellow students in the process.</p>
 
                 </div>
 
@@ -191,7 +194,7 @@
                         <img class="project-tech-logo" src="/assets/brands/hesk.png" alt="Hesk">
                         <div class="project-tech-content">
                             <h4>Hesk Ticketing Software</h4>
-                            <p>Hesk is a Ticketing Software used by IT Technicians. It allow users to submit tickets for IT support and receive this in an organise and documented way.</p>
+                            <p>Hesk is a Ticketing Software used by IT Technicians. It allow users to submit tickets for IT support and receive this in an organise and documented way. Allowing for either Public or Private use, this software could be used as either an internal tool for employees or even as a public facing one if required by the business.</p>
                         </div>
                     </div>
 
@@ -199,7 +202,7 @@
                         <img class="project-tech-logo" src="/assets/brands/aws.png" alt="AWS">
                         <div class="project-tech-content">
                             <h4>AWS</h4>
-                            <p>AWS (Amazon Web Services) is a cloud service provider offering multiple cloud solutions. I used AWS to host a EC2 virtual machine that could run the required software.</p>
+                            <p>AWS (Amazon Web Services) is a cloud service provider offering multiple cloud solutions. I used AWS to host a EC2 virtual machine that could run the required software and provide great uptime. </p>
                         </div>
                     </div>
 
