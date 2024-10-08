@@ -43,6 +43,15 @@ body {
     padding-block: 10px;
 }
 
+.container p > a {
+    margin-left: 0.5rem;
+}
+
+.container p > a:hover,
+.container p > a:focus-within {
+    text-decoration: underline;
+}
+
 .subcontainer {
     width: 85%;
     margin: auto;
@@ -53,7 +62,8 @@ body {
     position: fixed;
     bottom: 0;
     color: var(--white);
-    background-color: var(--blue-accent);
+    background-color: #121274f6;
+    border-top: 2px var(--yellow-accent) solid;
     z-index: 9999;
     display: none;
 
@@ -78,13 +88,17 @@ body {
     padding: 8px 12px 8px 12px;
     font-size: 1rem;
     cursor: pointer;
-    border: 2px var(--risd-blue) solid;
-    background-color: var(--blue-bg);
-    box-shadow: 1px 2px 5px var(--slate);
+    border: none;
+    background-color: var(--yellow-accent);
     color: var(--blue-accent);
     font-weight: bold;
 }
 
+#cookies-btn:hover {
+    background-color: var(--risd-blue);
+    color: var(--white);
+    transition: var(--animation-timing);
+}
 
 header {
     position: sticky;
@@ -1762,6 +1776,15 @@ footer {
 
 @media screen and (max-width:877px) {
 
+    .container {
+        border-top: 2px var(--yellow-accent) solid;
+        padding-block: 2rem;
+    }
+    #cookies-btn {
+        box-shadow: none;
+        width: 85%;
+    }
+
     .hero,
     .workstation-wrapper,
     .current-rig,
@@ -1775,6 +1798,7 @@ footer {
         padding-inline: inherit;
     }
 
+    .cookies, 
     .navbar {
         justify-content: center;
     }
