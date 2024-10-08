@@ -644,6 +644,7 @@ nav {
 .job-current img:hover {
     scale: 1.2;
     transition: var(--animation-timing)
+    
 }
  
 .job-previous {
@@ -729,6 +730,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: .5rem;
+    margin: 0.25rem;
     align-items: center;
     width: 75px;
 }
@@ -747,9 +749,10 @@ nav {
     filter: brightness(0) invert(1);
 }
 
-.job-skills img:hover {
+.js-card:hover {
     scale: 1.2;
-    transition: var(--animation-timing)
+    transition: var(--animation-timing);
+
 }
 
 .previous {
@@ -1322,6 +1325,7 @@ body.modal-open {
 .current-homelab ul li {
     position: relative;
     padding-left: 1.5rem;
+    margin-block: 0.5rem;
 }
 
 .pro-writeup-contents ul li::before,
