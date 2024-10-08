@@ -36,6 +36,56 @@
 body {
     background-color: var(--white);
 }
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-block: 10px;
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+#cookies {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: var(--white);
+    background-color: var(--blue-accent);
+    z-index: 9999;
+    display: none;
+
+}
+
+.cookies {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cookies a {
+    color: var(--yellow-accent);
+    text-decoration: none;
+}
+
+#cookies-btn {
+    border-radius: 25px;
+    padding: 8px 12px 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px var(--risd-blue) solid;
+    background-color: var(--blue-bg);
+    box-shadow: 1px 2px 5px var(--slate);
+    color: var(--blue-accent);
+    font-weight: bold;
+}
+
+
 header {
     position: sticky;
     top: 0;
@@ -141,6 +191,7 @@ nav {
     text-align: center;
     font-weight: 400;
     font-size: 1rem;
+    color: var(--blue-accent);
 }
 
 .contact-social {
@@ -169,7 +220,7 @@ nav {
     position: absolute;
     top: 10px;
     right: 20px;
-    color: #aaa;
+    color: var(--slate);
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
@@ -177,7 +228,7 @@ nav {
 
 .close-button:hover,
 .close-button:focus-within {
-    color: #000;
+    color: var(--blue-accent);
     text-decoration: none;
     cursor: pointer;
 }
