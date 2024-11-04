@@ -1435,7 +1435,9 @@ body.modal-open {
     max-height: 200px;
     width: auto;
     border-radius: 25px;
-    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--blue-accent);
+    box-shadow: var(--box-shadow);
 }
 
 .pro-writeup-contents details p {
