@@ -257,6 +257,7 @@ nav {
     display: inline-block;
     padding: 10px 20px;
     font-weight: bold;
+    border: 1px solid var(--blue-accent);
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
@@ -1357,7 +1358,7 @@ body.modal-open {
 .project-writeup {
     display: grid;
     gap: 1.5rem;
-    padding-top: 2rem;
+    padding-block: 2rem;
     background-color: var(--blue-bg);
     font-family: Ubuntu;
 }
@@ -1468,8 +1469,6 @@ body.modal-open {
 .carosel-card {
     display: grid;
     grid-template-rows: min-content;
-    gap: 1rem;
-    padding: 0.5rem;
     border-radius: 25px;
     justify-items: center;
     background: var(--blue-bg);
@@ -1480,7 +1479,7 @@ body.modal-open {
     inline-size: 100%;
     aspect-ratio: 16/9;
     border: 1px var(--slate) solid;
-    border-radius: 25px;
+    border-radius: 25px 25px 0px 0px;
 }
 
 .carosel-card > h6 {
@@ -1488,6 +1487,7 @@ body.modal-open {
     font-family: Ubuntu;
     font-weight: 700;
     font-size: 0.9rem;
+    margin: 1rem;
 }
 
 .project-carosel::-webkit-scrollbar {
@@ -1538,6 +1538,25 @@ body.modal-open {
     font-family: Orbitron;
     text-decoration: underline;
     color: var(--blue-accent);
+}
+
+.pro-bk-btn {
+    padding: 1rem;
+    margin: 1rem;
+    width: max-content;
+    color: var(--white);
+    border: 1px solid var(--blue-accent);
+    background-color: var(--blue-accent);
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.pro-bk-btn:hover,
+.pro-bk-btn:focus-within {
+    color: var(--blue-accent);
+    background-color: var(--white);
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
 }
 
 .current-homelab, 
@@ -1804,11 +1823,11 @@ footer {
 
 .footer-legal a:hover,
 .footer-legal a:focus {
-    color: var(--risd-blue);
+    color: var(--yellow-accent);
     transition: var(--animation-timing);
 }
 
-/* Tabelt & Mobile media queries */
+/* Tablet & Mobile media queries */
 
 @media screen and (max-width:877px) {
 
@@ -1952,6 +1971,10 @@ footer {
     .pro-writeup-contents details .summary-contents,
     .pro-writeup-contents details:nth-child(even) .summary-contents {
         flex-direction: column;
+    }
+
+    .pro-bk-btn {
+        justify-self: center;
     }
 
     .hamburger-menu {
