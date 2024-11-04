@@ -1407,6 +1407,40 @@ body.modal-open {
     background-repeat: no-repeat;
 }
 
+.pro-writeup-contents details summary {
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: var(--blue-bg);
+    font-weight: bold;
+    font-family: Orbitron;
+    cursor: pointer;
+}
+
+.pro-writeup-contents details[open] summary {
+    background-color: var(--blue-accent);
+    color: var(--white);
+    transition: var(--animation-timing);
+}
+
+.pro-writeup-contents details .summary-contents {
+    display: flex;
+    align-items: center;
+}
+
+.pro-writeup-contents details:nth-child(even) .summary-contents {
+    flex-direction: row-reverse;
+}
+
+.pro-writeup-contents details .summary-contents img {
+    max-height: 200px;
+    width: auto;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.pro-writeup-contents details p {
+    padding: 1rem;
+}
 
 .project-carosel{
     display: grid;
@@ -1911,6 +1945,11 @@ footer {
     .project-tech-card img {
         min-width: 4rem;
         height: auto;
+    }
+
+    .pro-writeup-contents details .summary-contents,
+    .pro-writeup-contents details:nth-child(even) .summary-contents {
+        flex-direction: column;
     }
 
     .hamburger-menu {
